@@ -18,4 +18,15 @@ When you click the **Knit** button a document will be generated that includes bo
 ```{r cars}
 library(rempsyc)
 head(mtcars)
+```
+
+```{r}
+t.test(mpg ~ am, data = mtcars)
+```
+
+```{r}
+modelcar <- lm(mpg ~ am, data = mtcars)
+summary(modelcar)
+```
+
 
