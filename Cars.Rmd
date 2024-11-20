@@ -18,31 +18,7 @@ When you click the **Knit** button a document will be generated that includes bo
 ```{r cars}
 library(rempsyc)
 head(mtcars)
-nice_t_test(
-  data = mtcars,
-  response = "mpg",
-  group = "am",
-  warning = FALSE
-)
+t.test(mpg ~ am, data = mtcars)
 
-```
-
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
-
-```{r}
-t.test(
-  data = mtcars,
-  response = "mpg",
-  group = "am",
-  warning = FALSE
-)
 ```
 
